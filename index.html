@@ -9,110 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-        .navbar {
-            background-color: #ffffff;
-        }
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            background-color: #ffffff;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 10px 0;
-        }
-
-        body {
-            padding-top: 70px; /* Ajusta el espacio para que el contenido no quede debajo del navbar */
-        }
-
-        .navbar-brand img {
-            height: 30px;
-        }
-        .nav-link {
-            color: rgb(250, 0, 0) !important;
-            font-weight: bold;
-        }
-        .nav-link:hover {
-            color: #ffd700 !important;
-        }
-        .btn-reservar {
-            background-color: #ffd700;
-            color: #ee0004;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-        .btn-reservar:hover {
-            background-color: #ffcc00;
-        }
-        .carousel-inner img {
-            width: 100%;
-            height: auto;
-        }
-        /* Estilos del popup */
-        .popup-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 999;
-        }
-        .popup {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: white;
-            padding: 25px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-            z-index: 1000;
-            border-radius: 10px;
-            text-align: center;
-            max-width: 450px;
-            width: 90%;
-        }
-        .popup .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            cursor: pointer;
-            font-size: 20px;
-            font-weight: bold;
-            color: red;
-        }
-        .popup img {
-            width: 100%;
-            max-width: 400px;
-            display: block;
-            margin: 10px auto;
-            border-radius: 10px;
-        }
-        /* Estilos de la tarjeta de servicio */
-        .service-card {
-            border-radius: 15px;
-            transition: transform 0.3s ease-in-out;
-            background: #ffffff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .service-card:hover {
-            transform: scale(1.2); /* Aumenta más el tamaño */
-            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombras más notorias */
-        }
-
-        .service-icons i {
-            font-size: 2rem;
-            margin: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <header>
@@ -136,13 +33,10 @@
                         <a class="nav-link" href="#destinos">Destinos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-reservar" href="https://api.whatsapp.com/send?phone=51965421312">Reservar</a>
+                        <a class="btn btn-reservar" href="https://api.whatsapp.com/send?phone=51965421312"><i class="fa-solid fa-envelope"></i>Reservar</a>
                     </li>
                 </ul>
             </div>
@@ -158,7 +52,7 @@
         <h4>¡Oferta Especial!</h4>
         <img src="images/anuncio.jpg" alt="Oferta Especial">
         <p>Reserva ahora y obtén un descuento exclusivo.</p>
-        <a href="https://api.whatsapp.com/send?phone=51965421312" class="btn btn-success">Reservar</a>
+        <a href="https://api.whatsapp.com/send?phone=51965421312" class="btn btn-success"><i class="fa-solid fa-envelope"></i>Reservar</a>
     </div>
 
     <!-- Carrusel de imágenes -->
@@ -233,7 +127,7 @@
                     <p>Salida: 3:00 PM</p>
                     <p><i class="fas fa-bus"></i> Terminal: Terminal Terrestre Andahuaylas</p>
                     <a href="https://api.whatsapp.com/send?phone=51965421312&text=Quiero%20reservar%20para%20la%20ruta%20Andahuaylas%20-%20Lima%20a%20las%203PM" 
-                       class="btn btn-danger">Reservar</a>
+                       class="btn btn-danger"><i class="fa-solid fa-envelope"></i>Reservar</a>
                 </div>
             </div>
         </div>
@@ -247,7 +141,7 @@
                     <p>Salida: 8:00 PM</p>
                     <p><i class="fas fa-bus"></i> Terminal: Terminal Terrestre Andahuaylas</p>
                     <a href="https://api.whatsapp.com/send?phone=51965421312&text=Quiero%20reservar%20para%20la%20ruta%20Andahuaylas%20-%20Cusco%20a%20las%208PM" 
-                       class="btn btn-danger">Reservar</a>
+                       class="btn btn-danger"><i class="fa-solid fa-envelope"></i>Reservar</a>
                 </div>
             </div>
         </div>
@@ -261,7 +155,7 @@
                     <p>Salida: 8:00 PM</p>
                     <p><i class="fas fa-bus"></i> Terminal: Terminal Terrestre Cusco</p>
                     <a href="https://api.whatsapp.com/send?phone=51965421312&text=Quiero%20reservar%20para%20la%20ruta%20Cusco%20-%20Andahuaylas%20a%20las%208PM" 
-                       class="btn btn-danger">Reservar</a>
+                       class="btn btn-danger"><i class="fa-solid fa-envelope"></i>Reservar</a>
                 </div>
             </div>
         </div>
@@ -275,7 +169,7 @@
                     <p>Salida: 4:30 PM</p>
                     <p><i class="fas fa-bus"></i> Terminal: Jr. Luna Pizarro 453 - Terminal Huamanga</p>
                     <a href="https://api.whatsapp.com/send?phone=51965421312&text=Quiero%20reservar%20para%20la%20ruta%20Lima%20-%20Andahuaylas%20a%20las%204:30PM" 
-                       class="btn btn-danger">Reservar</a>
+                       class="btn btn-danger"><i class="fa-solid fa-envelope"></i>Reservar</a>
                 </div>
             </div>
         </div>
@@ -289,7 +183,7 @@
                     <p>Salida: 5:30 PM</p>
                     <p><i class="fas fa-bus"></i> Terminal: Terminal Terrestre Atocongo</p>
                     <a href="https://api.whatsapp.com/send?phone=51965421312&text=Quiero%20reservar%20para%20la%20ruta%20Lima%20-%20Ayacucho%20a%20las%205:30PM" 
-                       class="btn btn-danger">Reservar</a>
+                       class="btn btn-danger"><i class="fa-solid fa-envelope"></i>Reservar</a>
                 </div>
             </div>
         </div>
@@ -301,62 +195,62 @@
     <h2 class="text-center fw-bold text-danger">Destinos</h2>
 
     <!-- Destino Andahuaylas -->
-    <div class="row align-items-center my-4">
-        <div class="col-md-6">
-            <img src="images/ANDAHUAYLAS.png" class="img-fluid rounded" alt="Andahuaylas">
+    <div class="row d-flex align-items-center my-4 gap-3">
+        <div class="col-md-4">
+            <img src="images/ANDAHUAYLAS.png" class="img-fluid rounded" style="max-width: 100%; height: auto;" alt="Andahuaylas">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-7">
             <h3 class="text-primary">Andahuaylas</h3>
             <p>
                 Andahuaylas, conocida como "La Pradera de los Celajes", es una ciudad encantadora en los Andes peruanos. 
                 Rodeada de paisajes montañosos y lagunas, ofrece una experiencia única para los amantes de la naturaleza 
                 y la cultura andina. Es famosa por su gastronomía tradicional y festividades culturales.
             </p>
-            <p><strong>Terminal:</strong> Terminal Terrestre Andahuaylas - Av. Malecon mil amores 43j</p>
-            <a href="https://api.whatsapp.com/send?phone=51965421312&text=Quiero%20viajar%20a%20Andahuaylas" class="btn btn-danger">Quiero viajar aquí</a>
+            <p><strong>Terminal:</strong> Terminal Terrestre Andahuylas: Malecón Mil Amores 253, Andahuaylas.</p>
+            <a href="https://api.whatsapp.com/send?phone=51965421312&text=Quiero%20viajar%20a%20Andahuaylas" class="btn btn-danger"><i class="fas fa-map-marker-alt"></i>Quiero viajar aquí</a>
         </div>
     </div>
 
     <!-- Destino Cusco -->
-    <div class="row align-items-center my-4">
-        <div class="col-md-6 order-md-2">
-            <img src="images/CUSCO.png" class="img-fluid rounded" alt="Cusco">
+    <div class="row d-flex align-items-center my-4 gap-3">
+        <div class="col-md-4 order-md-2">
+            <img src="images/CUSCO.png" class="img-fluid rounded" style="max-width: 100%; height: auto;" alt="Cusco">
         </div>
-        <div class="col-md-6 order-md-1">
+        <div class="col-md-7 order-md-1">
             <h3 class="text-primary">Cusco</h3>
             <p>
                 Cusco, la antigua capital del Imperio Inca, es uno de los destinos turísticos más importantes del mundo. 
                 Sus calles empedradas, arquitectura colonial y restos arqueológicos incas lo convierten en un lugar 
                 fascinante para los viajeros. Desde aquí, se puede acceder a la maravilla del mundo, Machu Picchu.
             </p>
-            <p><strong>Terminal:</strong> Terminal Terrestre Cusco - Av. Industrial 125</p>
-            <a href="https://api.whatsapp.com/send?phone=51965421312&text=Quiero%20viajar%20a%20Cusco" class="btn btn-danger">Quiero viajar aquí</a>
+            <p><strong>Terminal:</strong>Terminal Terrestre Cusco: Av. Vía de Evitamiento 429, Cusco</p>
+            <a href="https://api.whatsapp.com/send?phone=51965421312&text=Quiero%20viajar%20a%20Cusco" class="btn btn-danger"><i class="fas fa-map-marker-alt"></i>Quiero viajar aquí</a>
         </div>
     </div>
 
     <!-- Destino Ayacucho -->
-    <div class="row align-items-center my-4">
-        <div class="col-md-6">
-            <img src="images/AYACUCHO.png" class="img-fluid rounded" alt="Ayacucho">
+    <div class="row d-flex align-items-center my-4 gap-3">
+        <div class="col-md-4">
+            <img src="images/AYACUCHO.png" class="img-fluid rounded" style="max-width: 100%; height: auto;" alt="Ayacucho">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-7">
             <h3 class="text-primary">Ayacucho</h3>
             <p>
                 Ayacucho es conocida por sus hermosas iglesias coloniales, su Semana Santa, una de las más 
                 impresionantes de América Latina, y su rica historia. La ciudad ofrece un ambiente cálido y 
                 hospitalario, con una gran tradición artística en la fabricación de retablos y artesanías.
             </p>
-            <p><strong>Terminal:</strong> Terminal Terrestre Ayacucho - Av. Independencia 456</p>
-            <a href="https://api.whatsapp.com/send?phone=51965421312&text=Quiero%20viajar%20a%20Ayacucho" class="btn btn-danger">Quiero viajar aquí</a>
+            <p><strong>Terminal:</strong>Terminal Terrestre Libertadores de América Av. Javier Pérez de Cuellar #2263, Ayacucho.</p>
+            <a href="https://api.whatsapp.com/send?phone=51965421312&text=Quiero%20viajar%20a%20Ayacucho" class="btn btn-danger"><i class="fas fa-map-marker-alt"></i>Quiero viajar aquí</a>
         </div>
     </div>
 
     <!-- Destino Lima -->
-    <div class="row align-items-center my-4">
-        <div class="col-md-6 order-md-2">
-            <img src="images/LIMA.png" class="img-fluid rounded" alt="Lima">
+    <div class="row d-flex align-items-center my-4 gap-3">
+        <div class="col-md-4 order-md-2">
+            <img src="images/LIMA.png" class="img-fluid rounded" style="max-width: 100%; height: auto;" alt="Lima">
         </div>
-        <div class="col-md-6 order-md-1">
+        <div class="col-md-7 order-md-1">
             <h3 class="text-primary">Lima</h3>
             <p>
                 Lima, la capital del Perú, es una ciudad vibrante llena de historia, cultura y gastronomía. 
@@ -364,14 +258,89 @@
                 Lima es el punto de encuentro entre lo moderno y lo tradicional.
             </p>
             <p><strong>Terminal:</strong> Terminal Terrestre Lima - Jr. Luna Pizarro 453 "Terminal Huamanga"</p>
-            <a href="https://api.whatsapp.com/send?phone=51965421312&text=Quiero%20viajar%20a%20Lima" class="btn btn-danger">Quiero viajar aquí</a>
+            <a href="https://api.whatsapp.com/send?phone=51965421312&text=Quiero%20viajar%20a%20Lima" class="btn btn-danger"><i class="fas fa-map-marker-alt"></i>Quiero viajar aquí</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- NOSOTROS-->
+
+<section id="nosotros" class="nosotros-section">
+    <div class="container">
+        <h2><i class="fas fa-users"></i> Sobre Nosotros</h2>
+        <div class="content">
+            <div class="text">
+                <p><i class="fas fa-bus"></i> Real Chancas Express se dedica al traslado de personas entre Lima, Andahuaylas y Cusco, brindando un servicio seguro y cómodo. Contamos con una amplia flota de vehículos modernos y un equipo comprometido en ofrecer la mejor experiencia de viaje a nuestros pasajeros.</p>
+            </div>
+            <div class="images">
+                <div class="image-container">
+                    <img src="images/c6p.jpg" alt="Imagen 1" class="zoomable">
+                    <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="image-container">
+                    <img src="images/c6p953.jpg" alt="Imagen 2" class="zoomable">
+                    <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="image-container">
+                    <img src="images/w2j.jpeg" alt="Imagen 3" class="zoomable">
+                    <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="mission-vision">
+            <div class="mission">
+                <h3><i class="fas fa-bullseye mission-icon"></i> Misión</h3>
+                <p>Proporcionar un servicio de transporte de alta calidad, asegurando la satisfacción y seguridad de nuestros clientes en cada trayecto.</p>
+            </div>
+            <div class="vision">
+                <h3><i class="fas fa-eye vision-icon"></i> Visión</h3>
+                <p>Ser la empresa líder en transporte terrestre en Perú, reconocida por nuestra excelencia operativa y compromiso con el cliente.</p>
+            </div>
+        </div>
+        <div class="values">
+            <h3><i class="fas fa-gem values-icon"></i> Valores</h3>
+            <ul>
+                <li><i class="fas fa-shield-alt security-icon"></i> <strong>Seguridad:</strong> Priorizar la integridad de nuestros pasajeros en cada viaje.</li>
+                <li><i class="fas fa-handshake commitment-icon"></i> <strong>Compromiso:</strong> Dedicación total para brindar un servicio de calidad.</li>
+                <li><i class="fas fa-lightbulb innovation-icon"></i> <strong>Innovación:</strong> Implementar tecnologías y procesos que mejoren la experiencia del cliente.</li>
+                <li><i class="fas fa-balance-scale responsibility-icon"></i> <strong>Responsabilidad:</strong> Cumplir con nuestras obligaciones de manera ética y profesional.</li>
+            </ul>
         </div>
     </div>
 
+    <!-- Modal para mostrar la imagen en grande -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
 </section>
+
 <footer>
-    <div>
-        <h1>hollaa</h1>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Contáctanos</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Agencia Principal: Jr. Luna Pizarro 453, Terminal Huamanga</p>
+            <p><i class="fab fa-whatsapp"></i> Ventas WhatsApp: <a href="https://wa.me/51965421312">+51 965421312</a></p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Destinos</h4>
+            <ul>
+                <li><i class="fas fa-bus"></i> <a href="https://api.whatsapp.com/send?phone=51965421312&text=Quiero%20viajar%20a%20Cusco">Cusco</a></li>
+                <li><i class="fas fa-bus"></i> <a href="https://api.whatsapp.com/send?phone=51965421312&text=Quiero%20viajar%20a%20Andahuaylas">Andahuaylas</a></li>
+                <li><i class="fas fa-bus"></i> <a href="https://api.whatsapp.com/send?phone=51965421312&text=Quiero%20viajar%20a%20Lima">Lima</a></li>
+                <li><i class="fas fa-bus"></i> <a href="https://api.whatsapp.com/send?phone=51965421312&text=Quiero%20viajar%20a%20Ayacucho">Ayacucho</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Síguenos</h4>
+            <p><i class="fab fa-facebook"></i> <a href="https://web.facebook.com/profile.php?id=100037499116120">Facebook</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Real Chancas Express. Todos los derechos reservados.</p>
     </div>
 </footer>
 
@@ -381,6 +350,27 @@
             document.getElementById("popupAd").style.display = "none";
             document.getElementById("popupOverlay").style.display = "none";
         });
+    </script>
+    <script>
+        document.querySelectorAll('.image-container').forEach(container => {
+            container.addEventListener('click', function () {
+                let modal = document.getElementById("imageModal");
+                let modalImg = document.getElementById("modalImg");
+                modal.style.display = "block";
+                modalImg.src = this.querySelector("img").src;
+            });
+        });
+    
+        document.querySelector(".close").addEventListener("click", function () {
+            document.getElementById("imageModal").style.display = "none";
+        });
+    
+        window.onclick = function(event) {
+            let modal = document.getElementById("imageModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
     </script>
     
 </body>
